@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff6f91" />
+  <title>Love Video 🎬</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="video">
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <div class="floating-shapes" aria-hidden="true">
+    <span>🎬</span><span>⭐</span><span>🎀</span><span>💖</span><span>🍿</span><span>✨</span>
+  </div>
+
+  <header class="topbar glass">
+    <a class="brand" href="index.html">lovable Magic ✨</a>
+    <a class="mini-back" href="index.html">← Home</a>
+  </header>
+
+  <main class="page-shell inner-page">
+    <section class="section-heading centered reveal">
+      <p class="eyebrow">Lights, camera, Memory On!</p>
+      <h1 class="page-title">Special Video, Just for You 🎬</h1>
+      <p>Turn up the volume and enjoy your little birthday movie.</p>
+    </section>
+
+    <section class="video-stage glass reveal delay-1">
+      <div class="video-glow"></div>
+      <video id="birthdayVideo" controls playsinline preload="metadata" poster="assets/images/video-cover1.jpg">
+        <source src="assets/video/birthday-video1.mp4" type="video/mp4" />
+        Your browser does not support the video player.
+      </video>
+      <video id="birthdayVideo" controls playsinline preload="metadata" poster="assets/images/video-cover2.jpg">
+        <source src="assets/video/birthday-video2.mp4" type="video/mp4" />
+        Your browser does not support the video player.
+      </video>
+      <video id="birthdayVideo" controls playsinline preload="metadata" poster="assets/images/video-cover3.jpg">
+        <source src="assets/video/birthday-video3.mp4" type="video/mp4" />
+        Your browser does not support the video player.
+      </video>
+      <div class="video-caption">
+        <span>💗</span>
+        <p>Made with love, laughter, and lots of beautiful memories.</p>
+      </div>
+    </section>
+
+    <section class="cinema-note glass reveal">
+      <span class="cinema-icon">🍿</span>
+      <div>
+        <h2>Director’s note</h2>
+        <p>
+          No big studio, no expensive camera—only genuine love and the hope that
+          this video makes your birthday more memorable.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-cta glass reveal">
+      <span>💌</span>
+      <h2>One final surprise remains</h2>
+      <p>Open the letter written especially for you.</p>
+      <a class="btn btn-primary" href="note.html">Read the Birthday Letter</a>
+    </section>
+  </main>
+
+  <nav class="mobile-nav glass" aria-label="Main navigation">
+    <a href="index.html"><span>🏠</span><small>Home</small></a>
+    <a href="gallery.html"><span>📸</span><small>Photos</small></a>
+    <a class="active" href="video.html"><span>🎬</span><small>Video</small></a>
+    <a href="note.html"><span>💌</span><small>Note</small></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
